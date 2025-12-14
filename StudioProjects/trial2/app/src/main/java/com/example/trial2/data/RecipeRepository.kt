@@ -14,7 +14,7 @@ class RecipeRepository(private val recipeDao: RecipeDao, private val userDao: Us
 
     suspend fun delete(recipe: Recipe) = recipeDao.delete(recipe)
 
-    // User functions
+
     suspend fun getUserByUsername(username: String): User? = userDao.getUserByUsername(username)
 
     suspend fun insertUser(user: User) = userDao.insert(user)
